@@ -36,7 +36,9 @@ nextButton.addEventListener('click', e => {
     const currentSlide = track.querySelector('.current-slide');
     const nextSlide = currentSlide.nextElementSibling;
     const amountToMove = nextSlide.style.left;
-    // move the slide
+    
+    // move to the next slide
+    track.style.transform = `translateX(-${amountToMove})`;
 })
 
 
